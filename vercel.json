@@ -3,5 +3,12 @@
   "outputDirectory": "dist",
   "devCommand": "npm run start",
   "installCommand": "npm install",
-  "framework": "vite"
+  "framework": "vite",
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://coupon.netmarble.com/api/$1"
+    }
+  ]
 }
